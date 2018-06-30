@@ -1,0 +1,24 @@
+/* clear default style*/
+textarea {
+  outline: 0;
+  appearance: textarea;  
+  -moz-appearance: textarea;  
+  -webkit-appearance: textarea;
+  resize: auto;
+  text-shadow: none;
+}
+
+@component textarea {
+ /* format style */
+  width: 100%;
+  border: 1px solid var(--borderColor);
+  font-size: var(--fontBase);
+  padding: var(--paddingBase);
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:focus{
+    border: 1px solid var(--primaryColor);
+  }
+
+}

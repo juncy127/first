@@ -1,0 +1,48 @@
+
+.ivu-select-selection {
+  min-width: var(--dropdownWidth);
+  box-shadow: none;
+  border-color: var(--borderColor);
+  border-radius: var(--borderRadius);
+  text-align: left;
+
+  &:active,
+  &:hover {
+    border-color: var(--primaryColor);
+  }
+
+}
+.ivu-select-visible .ivu-select-selection {
+  border-color: var(--primaryColor);
+  box-shadow: none;
+}
+
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+.ivu-select-multiple .ivu-select-selection .ivu-select-placeholder {
+  height: var(--formItemHeight);
+  line-height: var(--formItemHeight);
+}
+.ivu-select-item {
+  text-align: left;
+}
+.ivu-select-item-selected.ivu-select-item-focus,
+.ivu-select-item-selected, .ivu-select-item-selected:hover {
+  background: var(--primaryColor);
+}
+.ivu-form-item-content {
+  & .ivu-select-selection {
+    min-width: 98% !important;
+  }
+}
+.ivu-select {
+  width: auto;
+}
+.ivu-form-item-error .ivu-select-selection {
+  border-color: var(--dangerColor) !important;
+  box-shadow: none;
+  &:focus,
+  &:hover {
+      border-color: var(--dangerColor) !important;
+      box-shadow: none;
+  }
+}

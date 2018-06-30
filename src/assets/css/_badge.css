@@ -1,0 +1,47 @@
+
+/* define normal buttons mixin */
+@define-mixin generateBadge $bgColor, $color: var(--white) {
+  background: var($bgColor);
+  color: $color;
+}
+
+@component badge {
+  display: inline-block;
+  font-style: normal;
+  font-size: var(--fontSmallest);
+  font-weight: bold;
+  line-height: 1;
+  border-radius: var(--borderRadius);
+  padding: var(--paddingSmallest);
+
+  @modifier default {
+    @mixin generateBadge --defaultColor;
+  }
+  
+  @modifier primary {
+    @mixin generateBadge --primaryColor;
+  }
+
+  @modifier success {
+    @mixin generateBadge --successColor;
+  }
+
+  @modifier info {
+    @mixin generateBadge --infoColor;
+  }
+
+  @modifier warning {
+    @mixin generateBadge --warningColor;
+  }
+
+  @modifier danger {
+    @mixin generateBadge --dangerColor;
+  }
+
+  @modifier icon {
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+
+}

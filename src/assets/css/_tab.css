@@ -1,0 +1,15 @@
+@component tab {
+  background: var(--white);
+  border-right: 1px solid #ddd;
+
+  @descendent item {
+    &:hover {
+      background: #f4f4f4;
+    }
+    &.active {
+      background: ;
+    }
+  }
+
+  
+}

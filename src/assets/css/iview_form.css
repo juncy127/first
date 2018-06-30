@@ -1,0 +1,86 @@
+.ivu-input-wrapper {
+    transition: all var(--transitionDuration) var(--transitionTimingFuction);
+    &:focus,
+    &:active,
+    &:hover {
+        border-color: var(--primaryColor);
+        box-shadow: none;.
+        & .ivu-icon {
+            border-left-color: var(--primaryColor);
+        }
+    }
+}
+.ivu-input {
+    width:100%;
+    outline: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    height: var(--headingLevel1);
+    line-height: 1.5;
+    padding: var(--paddingBase);
+    font-size: var(--fontSmallest);
+    border: 1px solid var(--borderColor) !important;
+    border-radius: var(--borderRadius);
+    color: var(--fontColorDark);
+    /* background-color: var(--bgColor); */
+    background-image: none;
+    position: relative;
+    cursor: text;
+    transition: border-color .2s ease-in-out;
+    box-shadow: none;
+    &:focus,
+    &:active,
+    &:hover {
+        border-color: var(--primaryColor) !important;
+        box-shadow: none;
+    }
+}
+
+.ivu-select-selection {
+    min-width: var(--dropdownWidth);
+    box-shadow: none;
+    border-color: var(--borderColor);
+    border-radius: var(--borderRadius);
+    text-align: left;
+
+    &:focus,
+    &:active,
+    &:hover {
+    border-color: var(--primaryColor);
+    }
+
+}
+.ivu-select-visible .ivu-select-selection {
+    border-color: var(--primaryColor);
+    box-shadow: none;
+}
+
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+.ivu-select-multiple .ivu-select-selection .ivu-select-placeholder {
+    height: var(--formItemHeight);
+    line-height: var(--formItemHeight);
+}
+.ivu-select-item {
+    text-align: left;
+}
+.ivu-select-item-selected.ivu-select-item-focus,
+.ivu-select-item-selected, .ivu-select-item-selected:hover {
+    background: var(--primaryColor);
+}
+.ivu-form-item-content {
+    & .ivu-select-selection {
+    min-width: 98% !important;
+    }
+}
+
+.ivu-form-item-error .ivu-input,
+.ivu-form-item-error .ivu-select-selection {
+    border-color: var(--dangerColor) !important;
+    box-shadow: none;
+    &:focus,
+    &:active,
+    &:hover {
+        border-color: var(--dangerColor) !important;
+        box-shadow: none;
+    }
+}

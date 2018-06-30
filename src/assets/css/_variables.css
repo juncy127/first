@@ -1,0 +1,114 @@
+:root {
+  /* theme color definition */
+  --defaultColor: #BBBBBB;
+  --defaultColorDark: #EBEBEB;
+
+  --primaryColor: #FFB230;
+  --primaryColorDark: #DA8900;
+  
+  --successColor: #8FC31F;
+  --linkColor: #5683E2;
+
+  --infoColor: #21b9bb;
+  --infoColorLight: #23c6c8;
+  --infoColorDark: #1CAFAF;
+
+  --warningColor: #FF5C5C;
+  --warningColorDark: #EA4848;
+
+  --white: #fff;
+  --whiteColor: #FAFAFA;
+  --whiteColorLight: #fff;
+  --whiteColorDark: #f2f2f2;
+
+  --bgColor: #F3F3F4;
+
+  --coverageAlarmColor: #F70CDA;
+  --facilitiesAlarmColor: #0D3FF4;
+  --offJobAlarmColor: #E3B20F;
+
+
+  /* font definition */
+  --fontColorNormal: #777;
+  --fontColorLight: #BBBBBB;
+  --fontColorDark: #000;
+
+  --fontBase: 14px;
+  --fontSmaller: 13px;
+  --fontSmallest: 12px;
+  --fontLarger: 16px;
+  --fontLargest: 18px;
+  
+  --headingLevel1: 32px;
+  --headingLevel2: 24px;
+  --headingLevel3: var(--fontLargest);
+  --headingLevel4: var(--fontLarger);
+  --headingLevel5: var(--fontBase);
+  --headingLevel6: var(--fontSmallest);
+
+  /* padding definition */
+  --paddingHorizontal: var(--fontSmallest);
+  --paddingBase: calc(var(--fontSmallest) * 0.5) var(--fontSmallest);
+  --paddingSmaller: calc(var(--fontLarger) * 0.3125) calc(var(--fontLarger) * 0.625);
+  --paddingSmallest: 1px 5px 2px;
+  --paddingLarger: calc(var(--fontLarger) * 0.625) var(--fontLarger);
+  --paddingLargest: var(--fontLarger) calc(var(--fontLarger) * 1.5);
+
+  /*border definition */
+  --borderColor: #DCDCDC;
+  --borderRadius: 3px;
+  --borderRadiusLarger:5px;
+
+  --blockPadding: 20px;
+  --blockMargin: 20px;
+  --blockBorderColor: #E7EAEC;
+
+  /* table definition */
+  --tableBorderColor: var(--borderColor);
+  --tableTitleColor: var(--fontColorNormal);
+  --tableTitleBgColor: #EBEBEB;
+  --tableTitleBorderBottomColor: #DCDCDC;
+  --tableTitlePadding: 3px;
+  --tableItemColor: var(--tableTitleColor);
+  --tableItemBgColor: var(--white);
+  --tableItemBorderBottomColor: var(--tableTitleBorderBottomColor);
+  --tableItemPadding: var(--tableTitlePadding);
+  --tableItemStripedColor: #f8f8f8;
+
+  /*dropdown width*/
+  --dropdownWidth: 200px;
+  --dropdownHeight: 300px; 
+  /* input, select height*/
+  --formItemMinWidth: 100px;
+  --formItemHeight: calc(var(--fontLarger) * 2);
+
+  /* transition definition */
+  --transitionDuration: .2s;
+  --transitionTimingFuction: linear;
+
+  --disabledOpacity: .6;
+
+  /* scroll bar definition */
+  --scrollbarWidth: 8px;
+  --scrollbarHeight: 8px;
+  --scrollbarTrackBgColor: #f5f5f5;
+  --scrollbarThumbBgColor: #999;
+
+  /* nav variables definition*/
+  --navBgColor: #35302C;
+  --navBgColorDark: #494541;
+  --navColor: #D6D5D4;
+  --navColorActive: var(--white);
+  --navItemHeight: 46px;
+  --navItemLeftPadding: 25px;
+  --navSubItemHeight: 32px;
+  --navSubItemLeftPadding: 50px;
+  --treeBgColorDark: #F8F8F8;
+  --treeColor: #515151;
+  --treeColorDark: #000;
+
+  /* a variables definition*/
+  --aDefaultColor: #676A6C;
+  --aHoverColor: #23527c;
+  --aHoverBgColor:#f4f4f4;
+}

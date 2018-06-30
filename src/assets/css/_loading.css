@@ -1,0 +1,19 @@
+@component loading {
+  position: fixed;
+  top: 102px;
+  left: 220px;
+  background: rgba(255, 255, 255, .7);
+  text-align: center;
+  width: calc(100vw - 220px);
+  height: calc(100vh - 102px);
+
+  @descendent icon {
+    animation: ani-demo-spin 1s linear infinite;
+  }
+}
+
+@keyframes ani-demo-spin {
+  from { transform: rotate(0deg);}
+  50%  { transform: rotate(180deg);}
+  to   { transform: rotate(360deg);}
+}

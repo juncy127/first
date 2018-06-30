@@ -1,0 +1,106 @@
+.ivu-btn {
+  outline: 0;
+  box-shadow: none;
+  height: 32px;
+  line-height: 18px;
+  &:active,
+  &:focus,
+  &:hover {
+    color: var(--primaryColor);
+    box-shadow: none;
+  }
+}
+.ivu-btn-primary {
+  background: var(--primaryColor);
+  border-color: var(--primaryColor);
+  &:active,
+  &:focus,
+  &:hover {
+    color: #fff;
+    background: var(--primaryColor);
+    border-color: var(--primaryColor);
+    box-shadow: none;
+  }
+}
+.ivu-modal-content {
+  border-radius: var(--borderRadius);
+}
+.ivu-modal-body {
+  background: #F8FAFB;
+}
+.ivu-modal-close {
+  &:hover {
+    background: transparent;
+  }
+}
+.ivu-modal .ivu-select-selection {
+  min-width: 80% !important;
+}
+.ivu-modal .ivu-col {
+  line-height: 32px;
+  text-align: right;
+}
+.ivu-modal .ivu-date-picker {
+  width: 100%;
+}
+.ivu-modal .ivu-select{
+  width: 100%
+}
+.row-margin {
+  margin-bottom:15px;
+}
+.ivu-modal .iridium-btn--smallest {
+  padding:1px 4px;
+}
+.ivu-modal .iridium-file-text{
+  padding: 0 10px;
+  border: 1px solid #e5e6e7;
+  height: 32px;
+  border-radius: 3px 0 0 3px;
+  background: #fff;
+  border-right: none;
+  color: #666;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.ivu-modal .flex{
+  align-items: center;
+}
+.iridium-upload-input{
+  display: inline;
+  background: #fff;
+  border: 1px solid #e5e6e7;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 100px;
+  height: 32px;
+  outline: 0;
+  padding: 6px 12px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  &:focus {
+     border: 1px solid #18a689;
+  }
+}
+.ivu-modal .ivu-upload .iridium-upload-input{
+  margin-top: 0;
+  width: 100%;
+}
+.ivu-modal .ivu-upload .iridium-upload-input {
+  border-radius: 0 3px 3px 0;
+  width: 100%;
+}
+.ivu-modal .ivu-upload-select {
+  display: block;
+}
+.ivu-modal .ivu-col .iridium-btn {
+  line-height: 18px;
+}
+.ivu-modal .ivu-modal .ivu-input-icon{
+  width: 32px;
+}
+.modal-warning .ivu-btn-primary{
+  background-color: #ED5565;
+  border-color: #ED5565;
+}

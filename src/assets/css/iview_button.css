@@ -1,0 +1,5 @@
+.ivu-btn-ghost.active,
+.ivu-btn-ghost:active,
+.ivu-btn-ghost:hover {
+    border-color: var(--primaryColor);
+}

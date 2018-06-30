@@ -1,0 +1,104 @@
+/* .ivu-icon-ios-calendar-outline:before, .ivu-input-icon:before {
+    content: "\f073";
+    font-family: FontAwesome;
+    font-style: normal;
+} */
+
+.ivu-input-wrapper {
+    &:active,
+    &:hover,
+    &:focus {
+        & .ivu-icon-ios-close {
+            color: var(--dangerColor);
+        }
+    }
+    & .ivu-icon-ios-clock-outline {
+        color: var(--primaryColor);
+    }
+}
+.ivu-icon-ios-calendar-outline:before, .ivu-input-icon:before {
+    content: "\e60c";
+    font-family: 'iconfont' !important;
+    font-style: normal;
+}
+.ivu-input-icon {
+    width:40px;
+    height: 30px;
+    line-height: 30px;
+    font-size: var(--fontBase);
+    text-align: center;
+    color: var(--fontColorNormal);
+    /* border: 1px solid var(--borderColor); */
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    z-index: 3;
+    background: transparent;
+}
+.ivu-date-picker-cells-header span {
+    line-height: 24px;
+    text-align: center;
+    margin: 2px;
+    color: var(--fontColorDark);
+}
+
+.ivu-date-picker-cells-focused em {
+    -webkit-box-shadow: 0 0 0 1px var(--primaryColor) inset;
+    box-shadow: 0 0 0 1px var(--primaryColor) inset
+}
+
+.ivu-date-picker-cells-cell-today em:after {
+    background: var(--primaryColor);
+}
+
+.ivu-date-picker-cells-cell-selected em,.ivu-date-picker-cells-cell-selected:hover em {
+    background: var(--primaryColor);
+}
+.ivu-date-picker-header-label:hover {
+    color: var(--primaryColor);
+}
+
+.ivu-date-picker-focused input {
+    border-width: 0;
+    outline: 0;
+}
+.ivu-date-picker-focused i {
+    border-color: var(--primaryColor);
+}
+
+.ivu-picker-panel-icon-btn:hover {
+    color: var(--primaryColor);
+}
+
+.ivu-picker-confirm {
+    border-color: var(--borderColor);
+}
+
+.ivu-picker-confirm > span {
+    color: var(--primaryColor);
+}
+
+.ivu-picker-confirm > span:hover {
+    color: var(--primaryColor);
+}
+
+.ivu-picker-confirm > span:active {
+    color: var(--primaryColor);
+}
+
+.ivu-time-picker-cells-list:first-child {
+    border-left: none;
+    border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+}
+
+.ivu-time-picker-cells-list:last-child {
+    border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
+}
+
+.ivu-time-picker-cells-cell-selected,.ivu-time-picker-cells-cell-selected:hover {
+    color: var(--primaryColor);
+}
+.ivu-input-icon-normal+.ivu-input {
+    padding-right:40px;
+}
+

@@ -1,0 +1,137 @@
+@import '_reset.css';
+@import '_variables.css';
+@import '_color.css';
+@import '_heading.css';
+@import '_scrollbar.css';
+@import '_button.css';
+@import '_badge.css';
+@import '_form.css';
+@import '_select.css';
+@import '_dropdown.css';
+@import '_table.css';
+@import '_pagination.css';
+@import '_loading.css';
+@import '_animation.css';
+@import '_fontAwesome.css';
+@import '_fontGlyphicons.css';
+@import 'iview_button.css';
+@import 'iview_datePicker.css';
+@import 'iview_modal.css';
+@import 'iview_form.css';
+@import 'iview_pagination.css';
+@import 'iview_notice.css';
+@import 'iview_spin.css';
+@import 'iconfont.css';
+@import '_textarea.css';
+
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bgColor);
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+article {
+  height: calc(100vh - 102px);
+  padding: 30px;
+  overflow-y: auto;
+}
+
+@component page {
+  background: var(--white);
+  color: var(--fontColorNormal);
+  font-size: var(--fontBase);
+
+  @descendent title {
+    color: var(--fontColorDark);
+    font-size: var(--fontLarger);
+    padding: 16px 40px;
+    & .iridium-btn--link {
+      line-height: 10px;
+      font-weight: normal;
+      font-size: var(--fontSmallest);
+    }
+  }
+
+  @descendent content {
+    padding: 16px 40px;
+    & .iridium-dropdown {
+      min-width: var(--dropdownWidth);
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.clear {
+  overflow: hidden;
+  &::before,
+  &::after {
+    display: block;
+    content: ''
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.full {
+  width: 98%;
+}
+.hide-cancel-btn {
+  & .ivu-btn-text {
+    display: none !important;
+  }
+}
+
+.font-larger {
+  font-size: var(--fontLarger);
+}
+.flex-1{
+  flex: 1;
+}
+.inline-block {
+  display: inline-block;
+}
+a:hover{
+  color: var(--aHoverColor);
+  background: var(--aHoverBgColor);
+}
+.aDisable:hover{
+  color: var(--aDefaultColor);
+  background: var(--bgColor);
+  cursor:not-allowed;
+}
+.aCurrent{
+  background: var(--bgColor);
+}
+.aDownload,
+.aDownload:hover{
+  color: var(--white);
+  background: transparent;
+}
+
+

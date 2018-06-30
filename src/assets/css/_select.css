@@ -1,0 +1,45 @@
+/* clear default style*/
+select {
+  appearance: none;  
+  -moz-appearance: none;  
+  -webkit-appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+select {
+  background: url("../images/icons/select-arrow.svg") no-repeat scroll right center / auto 80% var(--white);
+  border: 1px solid #000000;
+  &::-webkit-clear-button {
+    display: none;
+  }
+}
+
+@component select {
+ /* format style */
+  width: 100%;
+  border: 1px solid var(--borderColor);
+  background: url("../images/icons/select-arrow.svg") no-repeat scroll right center / 12% 60% var(--white);
+  font-size: var(--fontBase);
+  height: var(--formItemHeight);
+  margin: 1px;
+  padding: var(--paddingBase);
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: 0;
+  transition: all var(--transitionDuration) var(--transitionTimingFuction);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid var(--primaryColor);
+  }
+  &.disabled,
+  &:disabled {
+    border: 1px solid var(--borderColor);
+    filter: opacity(var(--disabledOpacity));
+    cursor: not-allowed;
+  }
+
+}

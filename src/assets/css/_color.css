@@ -1,0 +1,55 @@
+@utility font-default {
+  color: var(--defaultColor)
+}
+
+@utility font-primary {
+  color: var(--primaryColor)
+}
+
+@utility font-success {
+  color: var(--successColor)
+}
+
+@utility font-info {
+  color: var(--infoColor)
+}
+
+@utility font-warning {
+  color: var(--warningColor)
+}
+
+@utility font-danger {
+  color: var(--dangerColor)
+}
+
+@utility font-white {
+  color: var(--white)
+}
+
+@utility bg-default {
+  color: var(--defaultColor)
+}
+
+@utility bg-primary {
+  color: var(--primaryColor)
+}
+
+@utility bg-success {
+  color: var(--successColor)
+}
+
+@utility bg-info {
+  color: var(--infoColor)
+}
+
+@utility bg-warning {
+  color: var(--warningColor)
+}
+
+@utility bg-danger {
+  color: var(--dangerColor)
+}
+
+@utility bg-white {
+  color: var(--white)
+}

@@ -1,0 +1,8 @@
+.ivu-page {
+  text-align: right;
+}
+.ivu-page-prev,
+.ivu-page-item,
+.ivu-page-next {
+  margin: 0;
+}

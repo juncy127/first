@@ -1,0 +1,99 @@
+/* define form item mixin */
+@define-mixin generateFormItem {
+  display: inline;
+  background: var(--white);
+  border: 1px solid var(--borderColor);
+  border-radius: var(--borderRadius);
+  box-sizing: border-box;
+  min-width: var(--formItemMinWidth);
+  height: var(--formItemHeight);
+  margin: 1px;
+  outline: 0;
+  padding: var(--paddingBase);
+  transition: all var(--transitionDuration) var(--transitionTimingFuction);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid var(--primaryColor);
+  }
+  &.disabled,
+  &:disabled {
+    border: 1px solid var(--borderColor);
+    pointer-events: none;
+    filter: opacity(var(--disabledOpacity));
+  }
+}
+
+@component form {
+  text-align: left;
+
+  @descendent label {
+    position: relative;
+    display: inline;
+    line-height: var(--formItemHeight);
+  }
+
+  @descendent item {
+    margin-top: 10px;
+  }
+
+  @descendent input {
+    @mixin generateFormItem;
+
+    &[type="checkbox"] {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+    }
+    &[type="checkbox"] + i {
+      margin-top: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      color: var(--primaryColorLight);
+      &::before {
+        content: '\e157';
+      }
+    }
+    &[type="checkbox"]:checked + i::before {
+      content: '\e067';
+    }
+    &[type="checkbox"]:disabled + i::before {
+      cursor: default;
+      color: #ccc;
+    }
+  }
+
+  @descendent textarea {
+    @mixin generateFormItem;
+    resize: none;
+  }
+  
+  @modifier vertical {
+
+    & .iridium-form-label, 
+    & .iridium-form-input, 
+    & .iridium-form-textarea {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @modifier horizontal {
+
+    & .iridium-form-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+    & .iridium-form-label {
+      flex-shrink: 0;
+    }
+    & .iridium-form-input,
+    & .iridium-form-textarea {
+      flex-grow: 1;
+      clear: both;
+    }
+  }
+
+}
+
